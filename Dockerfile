@@ -12,4 +12,4 @@ RUN npm run build
 
 FROM xmorse/nginx-for-react:latest
 
-COPY --from=builder /workdir/dist /var/www
+COPY --from=builder /workdir/public /var/www

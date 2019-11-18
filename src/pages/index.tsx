@@ -8,15 +8,16 @@ import {
     Provider,
     Code,
     FeatureList,
-    Head, SubHead, Line, SignupForm
+    Head,
+    SubHead,
+    Line,
+    SignupForm
 } from 'react-landing-page-components'
 import React from 'react'
 import { H1, Image, Text, Box } from 'hybrid-components'
 import { Archive, Airplay } from 'styled-icons/feather'
 
-
 const MAILCHIMP_URL = ''
-
 
 const App = () => {
     return (
@@ -25,16 +26,19 @@ const App = () => {
                 <Logo width={['100%', null, '200px']} src={''} />
                 <Head fontSize='60px'>Mongomery</Head>
                 <SubHead>MongoDb native MAC and IOS client</SubHead>
-                <SignupForm action={MAILCHIMP_URL}/>
+                <SignupForm action={MAILCHIMP_URL} />
                 {/* <Button>Get Started</Button> */}
             </Hero>
-            <Line/>
+            <Line />
             <Section>
-                <img src={''} width='800px'/>
+                <img src={''} width='800px' />
             </Section>
             <Section>
                 <Head>Cose</Head>
-                <SubHead>The generated queries are super optimized. The generated queries are super optimized</SubHead>
+                <SubHead>
+                    The generated queries are super optimized. The generated
+                    queries are super optimized
+                </SubHead>
                 <FeatureList>
                     <FeatureList.Feature
                         icon={<Archive width='90px' />}
@@ -46,10 +50,9 @@ const App = () => {
                         title='Easy scroll'
                         description='prima cosa'
                     />
-                    
                 </FeatureList>
             </Section>
-            
+
             <Section>
                 <Head>Features</Head>
                 <Feature
